@@ -16,11 +16,21 @@ Moment JS дозволяє відображати дату відповідно 
 ___
 Будемо вважати, що Node.js уже встановлена на комп'ютері. 
 В терміналі введемо команду ініціалізації:
+
 ```bash
     npm install moment
 ```
 Після успішної установки MomentJS ви можете спостерігати наступний вивід:
-![Screenshot_1](
+![Screenshot_1](https://github.com/Chudokostya/Work_With_Data/blob/main/moment/imgs/1.jpg)
+
+Тепер, щоб перевірити, чи добре працює MomentJS з Node.js, створіть файл test.js і додайте в нього наступний код:
+```bash
+var moment = require ('moment');
+var a = moment (). toString ();
+console.log (a);
+```
+Тепер в командному рядку запустіть командний вузол test.js, як показано на наведеному нижче знімку екрану:
+![Screenshot_2](https://github.com/Chudokostya/Work_With_Data/blob/main/moment/imgs/2.jpg)
 ## Зростання проекту і падіння продуктивності
 
   Нещодавно число записів про літакових рейсах, які повертає система WhereTo, зросла приблизно в десять разів. Тоді ми зіткнулися з дуже сильним падінням продуктивності. 
