@@ -9,3 +9,5 @@ ___
 Керівник:
 
 доцент кафедри ОТ ФІОТ Болдак Андрій Олександрович.
+
+Доповідь знаходиться [тут](https://github.com/Chudokostya/Work_With_Data/blob/main/moment/doc/moment.md).
