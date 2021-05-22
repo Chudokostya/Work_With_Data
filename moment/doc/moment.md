@@ -81,6 +81,7 @@ console.log (a);
 
 MomentJS і RequireJS
 Щоб зрозуміти роботу MomentJS з використанням RequireJS, давайте проаналізуємо робочий приклад з MomentJS і RequireJS. Структура папок у відповідній програмі показана на наступному малюнку -
+
 ![Screenshot_7](https://github.com/Chudokostya/Work_With_Data/blob/main/moment/imgs/7.jpg)
 
 Ви можете отримати файл require.js, отриманий з офіційного сайту RequireJS - https://requirejs.org/docs/download.html. Зверніть увагу на наступний код для кращого розуміння -
