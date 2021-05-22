@@ -274,6 +274,7 @@ npm install moment-isocalendar
 var m = moment().isocalendar();
 ```
 Вивід:
+
 ![Screenshot_5](https://github.com/Chudokostya/Work_With_Data/blob/main/moment/imgs/5.jpg)
 
 Приклад:
@@ -282,6 +283,7 @@ var m = moment.fromIsocalendar([2018, 51, 10, 670]).format('LLLL');
 ```
 
 Вивід:
+
 ![Screenshot_6](https://github.com/Chudokostya/Work_With_Data/blob/main/moment/imgs/6.jpg)
 
 
