@@ -12,6 +12,51 @@ Moment JS дозволяє відображати дату відповідно 
 
 У MomentJS ви можете знайти безліч простих у використанні методів для додавання, віднімання, перевірки дати, отримання максимальної, мінімальної дати і т. Д. Це проект з відкритим вихідним кодом, і ви можете легко робити внесок в бібліотеку і додавати функції у вигляді плагінів і зробити його доступним на GitHub і в Node.js.
 
+# Характеристики
+___
+
+Аналіз
+
+Парсинг дозволяє розібрати дату в необхідному форматі. Розбір дати доступний у вигляді рядка, об'єкта і масиву. Це дозволяє вам клонувати момент за допомогою moment.clone. Доступні методи, які дають висновок дати в форматі UTC.
+
+Перевірка дати
+
+Перевірка дати дуже проста з MomentJS. Ви можете використовувати метод isValid () і перевірити, чи є дата дійсної чи ні. MomentJS також надає безліч прапорів розбору, які можна використовувати для перевірки правильності дати.
+
+Маніпуляція
+
+Існують різні методи маніпулювання датою і часом на об'єкті моменту. додавання, віднімання, startoftime, endoftime, local, utc, utcoffset і т. д. - це доступні методи, які дають докладну інформацію про дату / час в MomentJS.
+
+Get / Set
+
+Get / Set дозволяє читати і встановлювати одиниці в даті. Це дозволяє змінювати, а також зчитувати години, хвилини, секунди, мілісекунди, дату місяця, день тижня, день року, тиждень року, місяць, рік, квартал, рік тижні, тижні в році, отримати / встановити, максимум, мінімум і т. д. Get / Set - дуже корисна функція, доступна в MomentJS.
+
+дисплей
+Дисплей надає формати для відображення дати різними способами. Доступні методи, які повідомляють час з даного моменту, з поточного моменту, різницю між двома моментами і т. Д. Це дозволяє відображати дату в форматі JSON, Array, Object, String і т. Д.
+
+Запити дати
+
+У запитів з датами є прості у використанні методи, які повідомляють, чи є дата більшою або меншою, ніж введена, між зазначеними датами, високосним роком, моментом, датою і т. Д. Це дуже корисно при перевірці дати.
+
+Тривалість
+
+Тривалість є однією з важливих функцій в MomentJS. Це в основному обробляє тривалість часу для даних одиниць. Доступний метод гуманізації відображає дату в легкому для читання форматі.
+
+Інтернаціоналізація
+
+Інтернаціоналізація - ще одна важлива особливість MomentJS. Ви можете відображати дату і час в залежності від локалі. Локаль може бути застосована до певного моменту, якщо потрібно. Ви отримаєте мінімізований файл з домашнього сайту MomentJS, який має всі локалі. Якщо ви маєте справу з певною локаллю, ви також можете додати тільки цей файл локалі і працювати з ним. Назви місяців, тижнів і днів відображаються у зазначеній локалі.
+
+Налаштування
+
+MomentJS дозволяє виконати настройку для створеної локалі. Ви можете налаштувати назви місяців, абревіатуру місяці, назви дня тижня, скорочення дня тижня, формат довгою дати і календар для певної локалі відповідно до ваших вимог.
+
+Комунальні послуги
+
+Утиліти йдуть з двома методами: нормалізувати одиниці виміру і недійсні. Вони використовуються в даний момент і допомагають нам змінювати або налаштувати показ в міру необхідності. Це також дозволяє встановити нашу власну призначену для користувача перевірку для поточного об'єкта.
+
+Модулі
+
+Модулі є додатковими функціями MomentJS. У календарі додано багато плагінів, формат дати, аналіз, діапазони дат, точний діапазон і т. Д. Ви можете додати свої власні плагіни і зробити їх доступними з Node.js і GitHub.
 # Установка
 ___
 Будемо вважати, що Node.js уже встановлена на комп'ютері. 
@@ -31,6 +76,139 @@ console.log (a);
 ```
 Тепер в командному рядку запустіть командний вузол test.js, як показано на наведеному нижче знімку екрану:
 ![Screenshot_2](https://github.com/Chudokostya/Work_With_Data/blob/main/moment/imgs/2.jpg)
+# Взаємодія з MomentJS
+У цьому розділі ми обговоримо, як працювати з MomentJS, використовуючи RequireJS, MomentJS і TypeScript.
+
+MomentJS і RequireJS
+Щоб зрозуміти роботу MomentJS з використанням RequireJS, давайте проаналізуємо робочий приклад з MomentJS і RequireJS. Структура папок у відповідній програмі показана на наступному малюнку -
+![Screenshot_7](https://github.com/Chudokostya/Work_With_Data/blob/main/moment/imgs/7.jpg)
+
+Ви можете отримати файл require.js, отриманий з офіційного сайту RequireJS - https://requirejs.org/docs/download.html. Зверніть увагу на наступний код для кращого розуміння -
+
+Приклад project.html
+```bash
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RequireJS and MomentJS</title>
+      <!-- data-main attribute tells require.js to load
+         scripts/main.js after require.js loads. -->
+      <script data-main="scripts/main" src="scripts/require.js"></script>
+   </head>
+   <body>
+      <h1>RequireJS and MomentJS</h1>
+      <div id="datedisplay" style="font-size:25px;"></div>
+   </body>
+</html>
+```
+main.js
+```bash
+require.config({
+   paths:{
+      'momentlocale':'libs/momentlocale',
+   },
+});
+require(['momentlocale'], function (moment) {
+   moment.locale('fr');
+   var a = moment().format("LLLL");
+   document.getElementById("datedisplay").innerHTML = a;
+});
+```
+Зверніть увагу, що Moment.js і momentlocale.js знаходяться в папці libs.
+
+Нижче наведено висновок для project.html, який ви побачите в браузері:
+
+![Screenshot_8](https://github.com/Chudokostya/Work_With_Data/blob/main/moment/imgs/8.jpg)
+
+MomentJS и TypeScript
+Код, який використовується для складання проекту MomentJS і Typescript, наведено нижче:
+package.json
+```bash
+
+{
+   "name": "momenttypescript",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "dependencies": {
+      "browserify": "^16.2.0",
+      "gulp": "^3.9.1",
+      "gulp-connect": "^5.5.0",
+      "gulp-typescript": "^4.0.2",
+      "moment": "^2.22.1",
+      "tsify": "^4.0.0",
+      "typescript": "^2.8.3",
+      "vinyl-source-stream": "^2.0.0"
+   },
+   "devDependencies": {},
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "author": "",
+   "license": "ISC"
+}
+```
+Зверніть увагу, що залежно, доступні в пакеті, повинні бути встановлені в json за допомогою npm install.
+main.ts
+```bash
+import * as moment from 'moment';
+let now = moment().format('LLLL');
+document.getElementById("datedisplay").innerHTML = now;
+```
+Вам потрібно використовувати Gulp для створення файлу з машинописного тексту в JavaScript, тобто з main.ts в main.js. Наступний код показує gulpfile .js, який використовується для створення файлу. Зверніть увагу, що ми використовували пакет gulp-connect, який відкриває локальний сервер для відображення виводу.
+
+gulpfile.js
+```bash
+var gulp = require("gulp");
+var connect = require("gulp-connect");
+var browserify = require("browserify");
+var tsify = require("tsify");
+var source = require("vinyl-source-stream");
+gulp.task("build", function (cb) {
+   runSequence("browserify", "minify", cb);
+});
+gulp.task("startserver", ["browserify", "connect"]);
+gulp.task("browserify", function () {
+var b = browserify({
+   insertGlobals: true,
+   debug: false
+}) .add("src/main.ts") .plugin(tsify, { typescript: require("typescript") });
+return b
+   .bundle()
+   .pipe(source("main.js"))
+   .pipe(gulp.dest("build/"));
+});
+gulp.task("connect", function () {
+   connect.server({
+      root: ".",
+      // port: '80',
+      livereload: true
+   });
+});
+```
+Це висновок, який ви спостерігаєте при запуску наведеного вище коду -
+
+![Screenshot_9](https://github.com/Chudokostya/Work_With_Data/blob/main/moment/imgs/9.jpg)
+
+Ви можете побачити структуру папок, як показано в наступному форматі -
+
+![Screenshot_10](https://github.com/Chudokostya/Work_With_Data/blob/main/moment/imgs/10.jpg)
+
+
+Код для index.html показаний нижче -
+```bash
+<html>
+   <head></head>
+   <body>
+      <h1>MomentJS and typescript</h1>
+      <div id="datedisplay" style="font-size:30px;"></div>
+      <script src="build/main.js"></script>
+   </body>
+</html>
+```
+Тепер, якщо ви відкриєте http: // localhost: 8080 /, ви побачите висновок, як показано нижче -
+
+![Screenshot_11](https://github.com/Chudokostya/Work_With_Data/blob/main/moment/imgs/11.jpg)
 
 # Парсинг дати і часу
 
